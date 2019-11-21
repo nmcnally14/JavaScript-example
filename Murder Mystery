@@ -1,0 +1,24 @@
+/*
+ * Murder Mystery
+ */
+
+// change the value of `room` and `suspect` to test code
+var room = "ballroom";
+var suspect = "";
+
+var weapon = "";
+var solved = true;
+
+if (room == "dining room") {
+    (weapon = "knife") && (suspect = "Mr. Parkes");
+} else if (room == "ballroom")  {
+    (weapon = "poison") && (suspect = "Mr. Kalehoff");
+} else if (room == "gallery") {
+   (weapon = "trophy") && (suspect = "Ms. Van Cleve");
+} else {
+    (weapon = "pool stick") && (suspect = "Mrs. Sparr");
+}
+
+if (solved) {
+	console.log(suspect+" did it in the "+room+" with the "+weapon+"!");
+}
